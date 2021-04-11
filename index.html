@@ -1,0 +1,330 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTM & CSS CHEAT SHEET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS CHEAT SHEET</h1>
+    </header>
+
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#">Topic 1</a></li>
+            <li><a href="#">Topic 2</a></li>
+            <li><a href="#">Topic 3</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--TOPIC 1 START-->
+        <h3>Topic 1</h3>
+        <div class="container">
+            <div class="code code-1">
+                <!--SOURCE CODE GOES HERE-->
+                <pre>
+                    HTML
+
+                    &ltdiv class="container-1">
+                        &ltdiv class="box-1">
+                            &lth1>...&lt/h1>
+                            &ltp>...&lt/p>
+                        &lt/div>
+                    &lt/div>
+
+                    CSS
+
+                    body{
+                        /**/
+                        background-color:#f4f4f4;
+                        color:#555;
+                    
+                        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        font-size:16px;
+                        font-weight:normal;
+                        /* Same as Above */
+                        font:normal 16px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    
+                        line-height:1.6em;
+                        margin:0;
+                    }
+                    
+                    .container-1{
+                        width:500px;
+                        margin:auto;
+                    }
+                    
+                    .box-1{
+                        background-color:#333;
+                        color:#fff;
+                    
+                        border-right:5px solid red;
+                        border-left:5px solid red;
+                        border-top:5px solid red;
+                        border-bottom:5px solid red;
+                        /*Same as Above*/
+                        border:5px solid red;
+                    
+                        border-width:3px;
+                        border-bottom-width:10px;
+                        border-top-style:dotted;
+                    
+                        padding-top:20px;
+                        padding-bottom:20px;
+                        padding-right:20px;
+                        padding-left:20px;
+                        /*same as above*/
+                        padding:20px;
+                    
+                        margin:20px 0;
+                    }
+                    
+                    .box-1 h1{
+                        font-family:tahoma;
+                        font-weight:800;
+                        font-style:italic;
+                        text-decoration:underline;
+                        text-transform:uppercase;
+                        letter-spacing:0.2em;
+                        word-spacing:1em;
+                    }
+                </pre>
+            </div>
+
+            <div class="result result-1">
+                <!--RESULT GOES HERE-->
+                <div class="container-1">
+                    <div class="box-1">
+                        <h1>Hello World</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, veritatis inventore esse eveniet odit ullam dignissimos libero! Eius libero non fugit exercitationem molestias eos dolorum veritatis, nesciunt minus. Quasi a magni doloribus optio mollitia distinctio, laborum ab autem hic repellendus debitis vitae possimus soluta ex voluptate. Quisquam quasi numquam perspiciatis!</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <!--TOPIC 1 END-->
+
+        <!--TOPIC 2 START-->
+        <h3>Topic 2</h3>
+        <div class="container">
+            <div class="code code-2">
+                <pre>
+                    <!--SOURCE CODE GOES HERE-->
+                    HTML
+
+                    &ltdiv class="box-2">
+                        &lth1>Goodbye World&lt/h1>
+                        &ltp>...&lt/p>
+                    &lt/div>
+    
+                    &ltdiv class="categories-2">
+                        &lth2>Categories&lt/h2>
+                        &ltul>
+                            &ltli>&lta href="#">&lt/a>Category 1&lt/li>
+                            &ltli>&lta href="#">&lt/a>Category 2&lt/li>
+                            &ltli>&lta href="#">&lt/a>Category 3&lt/li>
+                            &ltli>&lta href="#">&lt/a>Category 4&lt/li>
+                        &lt/ul>
+                    &lt/div>
+
+                    CSS
+
+                    body a{
+                        text-decoration:none;
+                        color:#000;
+                    }
+                    
+                    body a:hover{
+                        color:red;
+                    }
+                    
+                    body a:active{
+                        /**/
+                    }
+                    
+                    body a:visited{
+                        /**/
+                    }
+                    
+                    .box-2{
+                        border:3px dotted #ccc;
+                        padding:20px;
+                        margin:20px 0;
+                    }
+                    
+                    .categories-2{
+                        border:1px #ccc solid;
+                        padding:10px;
+                        border-radius:15px;
+                    }
+                    
+                    .categories-2 h2{
+                        text-align:center;
+                    }
+                    
+                    .categories-2 ul{
+                        padding:0;
+                        list-style:square;
+                        list-style:none;
+                    }
+                    
+                    .categories-2 li{
+                        padding-bottom:6px;
+                        border-bottom:dotted 1px #333;
+                        /* list-style-image: url(); */
+                    }
+                </pre>
+            </div>
+
+            <div class="result result-2">
+                <!--RESULTS GO HERE-->
+                <div class="box-2">
+                    <h1>Goodbye World</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident dolore, magni minima consequatur soluta facilis molestias asperiores ipsum sint fugit quasi quidem et eaque. Nisi perspiciatis ullam atque totam maiores impedit, vero omnis quam aperiam quis, ratione illum, assumenda nihil esse dignissimos excepturi laborum ut maxime sed minima nostrum! Delectus.</p>
+                </div>
+
+                <div class="categories-2">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="#">Category 1</a></li>
+                        <li><a href="#">Category 2</a></li>
+                        <li><a href="#">Category 3</a></li>
+                        <li><a href="#">Category 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--TOPIC 2 END-->
+
+        <!--TOPIC 3 START-->
+        <h3>Topic 3</h3>
+        <div class="container">
+            <div class="code code-3">
+                <pre>
+                    <!--SOURCE CODE GOES HERE-->
+                    HTML
+
+                    &ltform action="" class="form-3">
+                        &ltdiv class="form-group-3">
+                            &ltlabel for="">Name: &lt/label>
+                            &ltinput type="text" name="name">
+                        &lt/div>
+    
+                        &ltdiv class="form-group-3">
+                            &ltlabel for="">Email: &lt/label>
+                            &ltinput type="text" name="email">
+                        &lt/div>
+    
+                        &ltdiv class="form-group-3">
+                            &ltlabel for="">Message: &lt/label>
+                            &lttextarea name="message" id="" cols="30" rows="10">&lt/textarea>
+                        &lt/div>
+    
+                        &ltinput type="submit" class="button" value="Submit" name="">
+                    &lt/form>
+
+                    CSS
+
+                    .form-3{
+                        padding:20px;
+                    }
+                    
+                    .form-3 .form-group-3{
+                        padding-bottom:15px;
+                    }
+                    
+                    .form-3 label{
+                        display:block;
+                    }
+                    
+                    .form-3 input[type="text"], .form-3 textarea{
+                        padding:8px;
+                        width:100%;
+                    }
+                    
+                    .form-3 input[type="submit"]{
+                        background:#333;
+                        color:#fff;
+                        padding:10px 15px;
+                        border:none;
+                    }
+                </pre>
+            </div>
+
+            <div class="result result-3">
+                <!--RESULTS GO HERE-->
+                <form action="" class="form-3">
+                    <div class="form-group-3">
+                        <label for="">Name: </label>
+                        <input type="text" name="name">
+                    </div>
+
+                    <div class="form-group-3">
+                        <label for="">Email: </label>
+                        <input type="text" name="email">
+                    </div>
+
+                    <div class="form-group-3">
+                        <label for="">Message: </label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <input type="submit" class="button" value="Submit" name="">
+                </form>
+            </div>
+        </div>
+        <!--TOPIC 3 END-->
+
+        <!--TOPIC 4 START-->
+        <h3>Topic 4</h3>
+        <div class="container">
+            <div class="code code-4">
+                <pre>
+                    <!--SOURCE CODE GOES HERE-->
+                </pre>
+            </div>
+
+            <div class="result result-4">
+                <!--RESULTS GO HERE-->
+                <div class="p-box-4">
+                    <h1>Hello</h1>
+                    <h2>Goodbye</h2>
+                </div>
+            </div>
+        </div>
+        <!--TOPIC 4 END-->
+
+        <!--TOPIC 5 START-->
+        <h3>Topic 5</h3>
+        <div class="container">
+            <div class="code code-5">
+                <pre>
+                    <!--SOURCE CODE GOES HERE-->
+                </pre>
+            </div>
+
+            <div class="result result-5">
+                <!--RESULTS GO HERE-->
+                <ul>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                </ul>
+            </div>
+        </div>
+        <!--TOPIC X END-->
+    </main>
+</body>
+</html>
